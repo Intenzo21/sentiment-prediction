@@ -25,14 +25,13 @@ nlp = spacy.load("en_core_web_sm", disable=['ner', 'parser'])
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template('index.html')
-
-
 model = pickle.load(open("sentiment_lr.pkl", "rb"))
 
 vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
+
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 
 @app.route('/predict', methods=['POST'])
@@ -151,7 +150,8 @@ def predict():
     prediction = model.predict(vectorized_input)
 
     return render_template('index.html',
-                           prediction_text=("The review is negative." if (prediction == 0) else "The review is positive."))
+                           prediction_text=("The review is negative." if (prediction == 0) else "The review is positive.")
+                           )
 
 if __name__ == "__main__":
     app.run(debug=True)
