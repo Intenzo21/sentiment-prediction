@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon food review API</title>
+</head>
+
+
+<body>
+    <div class="login">
+        <h1>Review polarity prediction</h1>
+
+        <form action="{{ url_for('predict')}}"method="post">
+
+            <label for="user_in">Review</label>
+            <input type="text" step="any" name="user_in" id="user_in" value={{ user_in | default("review", true) }} required="required"/> <br>
+
+
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <br>
+        <br>
+        {{ prediction_text }}
+    </div>
+</body>
+</html>
