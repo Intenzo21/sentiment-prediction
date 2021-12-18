@@ -79,7 +79,7 @@ def predict():
         expanded_text = re.sub("'", "", expanded_text)
         return expanded_text
 
-    # nltk.download('stopwords')
+    nltk.download('stopwords')
     stopword_list = nltk.corpus.stopwords.words('english')
     stopword_list.remove('no')
     stopword_list.remove('not')
