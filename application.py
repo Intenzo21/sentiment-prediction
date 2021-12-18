@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup
 
 ### Lematization
 import spacy
-nlp = spacy.load("en_core_web_sm", disable=['ner', 'parser'])
+nlp = spacy.load("en_core_web_sm")
 
 app = Flask(__name__)
 
