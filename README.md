@@ -1,1 +1,1 @@
-# sentiment_prediction
+# Sentiment Prediction Platform
