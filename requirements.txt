@@ -4,7 +4,7 @@ pickleshare==0.7.5
 Flask
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.2.0/en_core_web_sm-3.2.0-py3-none-any.whl
 cloudpickle==1.2.2
-nltk==3.6.5
+nltk==3.6.6
 contractions==0.0.58
 bs4==0.0.1
 spacy==3.2.1
@@ -13,7 +13,7 @@ spacy-loggers==1.0.1
 scikit-image==0.18.1
 scikit-learn==0.24.1
 Jinja2
-numpy==1.20.3
+numpy==1.22.0
 scipy==1.6.0
 threadpoolctl==3.0.0
 Werkzeug
