@@ -7,7 +7,7 @@ cloudpickle==1.2.2
 nltk==3.6.6
 contractions==0.0.58
 bs4==0.0.1
-spacy==3.2.1
+spacy
 spacy-legacy==3.0.8
 spacy-loggers==1.0.1
 scikit-image==0.18.1
