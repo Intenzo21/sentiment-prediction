@@ -17,6 +17,6 @@ numpy==1.22.0
 scipy==1.6.0
 threadpoolctl==3.0.0
 Werkzeug
-joblib==1.1.1
+joblib==1.2.0
 MarkupSafe
 gunicorn==19.9.0
