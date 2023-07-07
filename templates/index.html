@@ -6,6 +6,16 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Amazon Food Review API</title>
+
+    <style>
+        .positive {
+            color: MediumSeaGreen;
+        }
+        
+        .negative {
+            color: Tomato;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,8 +37,10 @@
                         <b>{{ review_placeholder }}</b>
                         <i>{{ review }}</i>
                         <br><br>
-                        <b>{{ prediction_placeholder }}</b>
-                        {{ polarity }}
+                        <div class="d-flex">
+                            <b>{{ prediction_placeholder }}</b>
+                            <p class="{{ polarity }}">{{ polarity }}</p>
+                        </div>
                     {% endif %}
                 </div>
             </div>
