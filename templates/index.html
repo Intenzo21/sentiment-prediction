@@ -34,13 +34,15 @@
                 </form>
                 <div class="mt-5">
                     {% if review %}
-                        <b>{{ review_placeholder }}</b>
-                        <i>{{ review }}</i>
+                        <p>
+                            <b>{{ review_placeholder }}</b>
+                            <i>{{ review }}</i>
+                        </p>
                         <br><br>
-                        <div class="d-flex">
+                        <p>
                             <b>{{ prediction_placeholder }}</b>
-                            <p class="{{ polarity }}">{{ polarity }}</p>
-                        </div>
+                            <span class="{{ polarity }}">{{ polarity }}</span>
+                        </p>
                     {% endif %}
                 </div>
             </div>
