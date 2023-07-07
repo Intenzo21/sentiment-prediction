@@ -23,7 +23,7 @@ def predict():
     prediction = model.predict(vectorized_input)
 
     return render_template('index.html',
-                           review_placeholder="Your Review:",
+                           review_placeholder="Last Review:",
                            review=str_features,
                            prediction_placeholder="Polarity Prediction:",
                            polarity=("negative" if (prediction == 0) else "positive")

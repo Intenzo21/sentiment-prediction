@@ -8,31 +8,35 @@
     <title>Amazon Food Review API</title>
 </head>
 
-
 <body>
-    <div class="login">
-        <h1 style="text-align:center;">Amazon Gourmet Food Review Polarity Predictor</h1>
-        <br><br><br>
-        <div class="d-flex justify-content-center">
-            <div class="col-md-4 col-xs-12">
-                <form action="{{ url_for('predict')}}" method="post">
-                    <label for="user_in"><h5>Your Review</h5></label>
-                    <input class="form-control" type="text" id="user_in" step="any" name="user_in" placeholder="How was the food?" required="required"/>
-                    <br>
-                    <div class="col text-center">
-                        <button type="submit" class="btn btn-primary mb-2">Predict</button>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="text-center mt-5 mb-5">Amazon Gourmet Food Review Polarity Predictor</h1>
+            <div class="col-md-6">
+                <form action="/predict" method="post" class="mt-5">
+                    <div class="mb-3">
+                        <label for="user_in" class="form-label"><h5>Your Review</h5></label>
+                        <input class="form-control" type="text" id="user_in" step="any" name="user_in" placeholder="How was the food?" required="">
                     </div>
-                    <br>
-
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Predict</button>
+                    </div>
                 </form>
-                <b>{{ review_placeholder }}</b>
-                <i>{{ review }}</i>
-                <br><br>
-                <b>{{ prediction_placeholder }}</b>
-                {{ polarity }}
+                <div class="mt-5">
+                    {% if review %}
+                        <b>{{ review_placeholder }}</b>
+                        <i>{{ review }}</i>
+                        <br><br>
+                        <b>{{ prediction_placeholder }}</b>
+                        {{ polarity }}
+                    {% endif %}
+                </div>
             </div>
         </div>
-
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-v5b4ve7c/91cpPkSvM1pzQvJFA8XbtojQg1LOpCxCwzYjAWzKycr+Iar3YvBQzGZ" crossorigin="anonymous"></script>
 </body>
+
 </html>
