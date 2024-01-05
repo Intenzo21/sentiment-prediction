@@ -1,4 +1,4 @@
-# Sentiment Analysis App
+# [Sentiment Analysis App 👍 👎](https://lr-sentiment-analysis-app.onrender.com/)
 
 For the purpose of the project, we considered a real-life balanced dataset consisting of 50,000 labeled gourmet food reviews from Amazon extracted from the work of McAuley and Leskovec. A food review is labeled as 1 (positive) if it received four or more stars and 0 (negative) otherwise. 
 
