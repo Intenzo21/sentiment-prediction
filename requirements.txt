@@ -14,7 +14,7 @@ scikit-image==0.18.1
 scikit-learn==0.24.1
 Jinja2
 numpy==1.22.0
-scipy==1.6.0
+scipy==1.11.1
 threadpoolctl==3.0.0
 Werkzeug
 joblib==1.2.0
