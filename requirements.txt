@@ -19,4 +19,4 @@ threadpoolctl==3.0.0
 Werkzeug
 joblib==1.2.0
 MarkupSafe
-gunicorn==19.9.0
+gunicorn==22.0.0
